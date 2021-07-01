@@ -11,6 +11,7 @@ public class ManagerStudents {
     ArrayList<Students> list = new ArrayList<>();
 
     public ArrayList<Students> docFile(){
+        ArrayList<Students> list = new ArrayList<>();
         try {
             BufferedReader ois = new BufferedReader(new FileReader("src/com/company/QLHS.csv"));
             String line ="";
@@ -24,7 +25,7 @@ public class ManagerStudents {
         }
         return list;
     }
-    public void ghiFile(ArrayList<Students> arrayList){
+    public void ghiFile(){
         try{
             BufferedWriter oos = new BufferedWriter(new FileWriter("src/com/company/QLHS.csv"));
             for (Students s : list){
@@ -47,7 +48,6 @@ public class ManagerStudents {
     }
 
     public void show(){
-        docFile();
         try{
             for(Students a: list){
                 System.out.println(a);
@@ -103,11 +103,6 @@ public class ManagerStudents {
         }
     }
 
-    public void writeToFile(){
-        ArrayList<Students> list1 = new ArrayList<>();
-        list1 = list;
-        ghiFile(list1);
-    }
 
     private int getId() {
         while (true) {

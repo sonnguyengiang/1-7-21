@@ -39,7 +39,7 @@ public class Main {
                     manager.readToFile();
                     break;
                 case 7:
-                    manager.writeToFile();
+                    manager.ghiFile();
                     break;
                 case 8:
                     System.exit(0);
