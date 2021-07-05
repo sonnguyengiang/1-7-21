@@ -13,7 +13,7 @@ public class CrawlSongExample {
 
     public static void main(String[] args) {
         try {
-            URL url = new URL("https://www.nhaccuatui.com/bai-hat/nhac-tre-moi.html");
+            URL url = new URL("https://github.com/sonnguyengiang/1-7-21/tree/master/Validate%20email/src/Testcarw");
             // open the stream and put it into BufferedReader
             Scanner scanner = new Scanner(new InputStreamReader(url.openStream()));
             scanner.useDelimiter("\\Z");
